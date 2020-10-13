@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.*/ 
 }
 
 body {
