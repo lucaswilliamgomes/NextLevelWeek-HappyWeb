@@ -1,0 +1,24 @@
+{
+  "name": "NextLevelWeek-Happy",
+  "version": "1.0.0",
+  "description": "Um projeto com finalidade de levar felicidade para as crianças que vivem em orfanatos 👧🏻👦🏽",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaswilliamgomes/NextLevelWeek-HappyWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucaswilliamgomes/NextLevelWeek-HappyWeb/issues"
+  },
+  "homepage": "https://github.com/lucaswilliamgomes/NextLevelWeek-HappyWeb#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.5"
+  }
+}
