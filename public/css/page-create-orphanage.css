@@ -31,6 +31,8 @@ main {
     border: 1px solid #d3e2e5;
     color: #5c8599;
     cursor: pointer;
+
+    outline: none;
 }
 
 .button-select button:first-child {
