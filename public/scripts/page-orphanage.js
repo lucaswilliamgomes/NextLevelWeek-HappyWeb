@@ -5,8 +5,14 @@ const options = {
     scrollWheelZoom: false,
     zoolControl: false
 }
+
+// get lat and lng from html
+const lat = document.querySelector('span[data-lat]').dataset.lat
+const lng = document.querySelector('span[data-lng]').dataset.lng
+
+
 // create map
-var map = L.map('mapid', options).setView([-27.2185383, -49.6518011], 15);
+var map = L.map('mapid', options).setView([lat, lng], 15);
 
 // create and add tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
@@ -20,7 +26,9 @@ const icon = L.icon({
     popupAnchor: [170, 2]
 })
 
-L.marker([-27.2185383, -49.6518011], {icon}).addTo(map)
+// create and add marker
+
+L.marker([lat, lng], {icon}).addTo(map)
 
 
 /* image gallery */

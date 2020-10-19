@@ -1,6 +1,6 @@
 
 // create map
-var map = L.map('mapid').setView([-27.2185383, -49.6518011], 15);
+var map = L.map('mapid').setView([-10.0614319, -50.41139], 5);
 
 // create and add tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
@@ -92,6 +92,14 @@ function toggleSelect (event) {
     // update input with the value selected 
 
     const input = document.querySelector('[name="open_on_weekends"')
-    input.value = button.dataset.value
+    input.value = clicked.dataset.value
 }
 
+function validate (event) {
+    lat = document.querySelector('[name=lat]').value
+    if (lat == ""){
+        event.preventDefault()
+        alert("Marque a localizção do orfanato no mapa!")
+    }
+    
+}
